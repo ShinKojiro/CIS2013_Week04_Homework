@@ -2,14 +2,16 @@
 
 using namespace std;
 
-int feetInchesInput(int feet, int inches);
-double feetToMeters(int);
-double inchesToMilimeters();
-void output();
+int feetInchesInput(int& feet, int& inches);
+double feetToMeters(double feet, double meters);
+double inchesToMilimeters(double inches, double milimeters);
+void output(double feet, double, inches, double Meters, double milimeters);
 
 int main(){
     int feet;
     int inches;
+    double meters;
+    double milimeters;
 
     feetInchesInput(feet, inches);
     inchesToMilimeters(feet, inches)
@@ -23,3 +25,5 @@ int feetInchesInput(int& feet, int& inches){
     cout << "How many inches? :  ";
     cin >> inches;
 }
+
+double feetToMeters(int)
