@@ -6,7 +6,7 @@ const double metersInAFoot = 0.3048;
 const double centimetersInAMeter = 100;
 const double inchesInAFoot = 12;
 
-// Its pretty pointless to do centiimeters, the conversion from meters to centimeters is a no brainer...
+// Its pretty pointless to do centimeters, the conversion from meters to centimeters is a no brainer...
 
 void feetInchesInput(double& feet, double& inches);
 // void inchesToFeet(double& feet, double& inches, double& feetAdded);
