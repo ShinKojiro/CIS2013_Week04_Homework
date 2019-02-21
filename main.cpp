@@ -2,9 +2,9 @@
 
 using namespace std;
 
-const double metersInAFoot = 0.3048;
-const double centimetersInAMeter = 100;
-const double inchesInAFoot = 12;
+const double METERS_IN_A_FOOT = 0.3048;
+const double CENTIMETERS_IN_A_METER = 100;
+const double INCHES_IN_A_FOOT = 12;
 
 // Its pretty pointless to do centimeters, the conversion from meters to centimeters is a no brainer...
 
@@ -42,20 +42,20 @@ void feetInchesInput(double& feet, double& inches){
 }
 
 void conversions(double& feet, double& inches, double& feetAdded, double& meters, double& centimeters){
-    feet = feet + (inches / inchesInAFoot);
-    feetAdded = (inches / inchesInAFoot);
-    meters = (feet * metersInAFoot);
-    centimeters = (meters * centimetersInAMeter);
+    feet = feet + (inches / INCHES_IN_A_FOOT);
+    feetAdded = (inches / INCHES_IN_A_FOOT);
+    meters = (feet * METERS_IN_A_FOOT);
+    centimeters = (meters * CENTIMETERS_IN_A_METER);
 }
 
 // void inchesToFeet(double& feet, double& inches, double& feetAdded){
-//     feet = feet + (inches / inchesInAFoot);
-//     feetAdded = (inches / inchesInAFoot);
+//     feet = feet + (inches / INCHES_IN_A_FOOT);
+//     feetAdded = (inches / INCHES_IN_A_FOOT);
 // }
 
 // void feetToMeters(double feet, double& meters, double& centimeters){
-//     meters = (feet * metersInAFoot);
-//     centimeters = (meters * centimetersInAMeter);
+//     meters = (feet * METERS_IN_A_FOOT);
+//     centimeters = (meters * CENTIMETERS_IN_A_METER);
 // }
 
 void output(double feet, double inches, double meters, double centimeters, double feetAdded){
